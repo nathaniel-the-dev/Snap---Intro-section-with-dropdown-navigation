@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="#!./images/favicon-32x32.png" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="antialiased text-base bg-almost-white">
+    <main class="min-h-screen grid grid-rows-[max-content,_1fr]">
+
+        <header class="text-sm md:px-9 px-2 py-4">
+            <nav class="flex items-center gap-16" aria-label="main navigation">
+                <a href="/" class="">
+                    <img src="./images/logo.svg" alt="Snap logo" />
+                </a>
+
+                <ul class="md:flex gap-6 items-center w-full hidden">
+                    <li class="nav-item group relative">
+                        <a class="nav-link inline-flex gap-2 items-center" href="#!">
+                            Features
+                            <svg width="10" height="6">
+                                <image class="arrow-down" href="/images/icon-arrow-down.svg"></image>
+                                <image class="arrow-up" href="/images/icon-arrow-up.svg"></image>
+                            </svg>
+                        </a>
+                        <div class="absolute top-0 left-0 hidden dropdown direction-right">
+                            <ul class="nav-links">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#!">
+                                        <svg width="14" height="16">
+                                            <image href="/images/icon-todo.svg" />
+                                        </svg>
+                                        Todo List
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#!">
+                                        <svg width="16" height="16">
+                                            <image href="/images/icon-calendar.svg" />
+                                        </svg>
+                                        Calendar
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#!">
+                                        <svg width="13" height="17">
+                                            <image href="/images/icon-reminders.svg" />
+                                        </svg>
+                                        Reminders
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#!">
+                                        <svg width="16" height="16">
+                                            <image href="/images/icon-planning.svg" />
+                                        </svg>
+                                        Planning
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link inline-flex gap-2 items-center" href="#!">
+                            Company
+                            <svg width="10" height="6">
+                                <image class="arrow-down" href="/images/icon-arrow-down.svg"></image>
+                                <image class="arrow-up" href="/images/icon-arrow-up.svg"></image>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">About</a>
+                    </li>
+
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link" href="#!">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline" href="#!">Register</a>
+                    </li>
+                </ul>
+
+                <button class="btn md:hidden ml-auto">
+                    <svg width="32" height="18">
+                        <image href="./images/icon-menu.svg" />
+                    </svg>
+                </button>
+            </nav>
+        </header>
+
+
+        <section class="py-12">
+            <div class="container flex md:flex-row flex-col-reverse justify-between md:gap-24 gap-12">
+                <div class="flex-1 flex flex-col md:gap-12 gap-6 text-center md:text-left">
+                    <h1 class="text-almost-black md:text-7xl text-4xl font-bold md:mt-16">Make <br
+                            class="md:block hidden">
+                        remote work
+                    </h1>
+
+                    <p class="text-medium-gray max-w-[45ch]">
+                        Get your team in sync, no matter your location. Streamline processes, create team rituals, and
+                        watch productivity soar.
+                    </p>
+
+                    <span>
+                        <a class="btn btn-solid text-sm" href="#!">Learn more</a>
+                    </span>
+
+                    <div class="md:mt-auto mt-4 flex md:gap-8 md:justify-start justify-between items-center">
+                        <svg class="md:scale-100 scale-75" width="114" height="20">
+                            <image href="/images/client-databiz.svg" />
+                        </svg>
+                        <svg class="md:scale-100 scale-75" width="73" height="36">
+                            <image href="/images/client-audiophile.svg" />
+                        </svg>
+                        <svg class="md:scale-100 scale-75" width="90" height="20">
+                            <image href="/images/client-meet.svg" />
+                        </svg>
+                        <svg class="md:scale-100 scale-75" width="83" height="24">
+                            <image href="/images/client-maker.svg" />
+                        </svg>
+                    </div>
+                </div>
+
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./images/image-hero-desktop.png" />
+                    <img class="md:max-h-[70vh] object-cover" src="./images/image-hero-mobile.png" alt="hero image" />
+                </picture>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/Nathan1434">Nathaniel Campbell</a>.
+    </div>
+</body>
+
+</html>

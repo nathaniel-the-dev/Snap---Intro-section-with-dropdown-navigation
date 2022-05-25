@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.btn {
+		@apply rounded-lg inline-block w-max py-3 px-6 cursor-pointer transition;
+	}
+	.btn-solid {
+		@apply bg-almost-black text-white outline outline-1 outline-transparent hover:bg-transparent hover:text-almost-black hover:outline-almost-black;
+	}
+	.btn-outline {
+		@apply bg-transparent text-almost-black outline outline-1 outline-current;
+	}
+}
+
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+
+	position: fixed;
+	inset: auto 0 0.5rem 0;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}

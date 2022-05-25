@@ -1,0 +1,14 @@
+{
+	"name": "snap---intro-section-with-dropdown",
+	"version": "1.0.0",
+	"description": "![Design preview for the Intro section with dropdown navigation coding challenge](./design/desktop-preview.jpg)",
+	"main": "index.html",
+	"scripts": {
+		"watch-css": "npx tailwindcss -i ./src/style.css -o ./css/style.css --watch"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"tailwindcss": "^3.0.24"
+	}
+}
