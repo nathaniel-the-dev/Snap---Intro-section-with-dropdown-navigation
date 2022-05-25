@@ -12,6 +12,10 @@
 	.btn-outline {
 		@apply bg-transparent text-almost-black outline outline-1 outline-current;
 	}
+
+	.nav-link {
+		@apply text-sm text-medium-gray hover:text-black;
+	}
 }
 
 html:focus-within {
@@ -27,5 +31,5 @@ html:focus-within {
 }
 
 .attribution a {
-	color: hsl(228, 45%, 44%);
+	color: #3e52a3;
 }
